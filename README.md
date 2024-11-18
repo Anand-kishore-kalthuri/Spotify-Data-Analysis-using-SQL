@@ -5,14 +5,14 @@ The analysis uncovers insights into tracks, artists, albums, and user interactio
 as streams, likes, and views. The project demonstrates various SQL techniques including
 aggregations, window functions, and common table expressions (CTEs) to solve real-world
 business problems.
-________________________________________
+_________________________________________________________________________________________
 Table of Contents
 1.	Data Structure
 2.	Exploratory Data Analysis (EDA)
 3.	Business Problems Analyzed
 4.	SQL Techniques Used
 5.	How to Run the Project
-________________________________________
+______________________________________________________________________________________________
 Data Structure
 
 The dataset is stored in a SQL table named spotify. Below is the structure of the table:
@@ -66,13 +66,13 @@ stream	BIGINT	Total streams of the track.
 energy_liveness	FLOAT	Computed value: energy divided by liveness.
 
 most_played_on	VARCHAR(50)	Platform where the track is most played (e.g., Spotify, YouTube).
-________________________________________
+_____________________________________________________________________________________________
 Exploratory Data Analysis (EDA)
 Basic EDA was performed to understand the dataset and clean any anomalies:
 1.	Counted total records and unique values for key fields like artist, track, album, and channel.
 2.	Calculated minimum and maximum values for energy and duration_min.
 3.	Identified and removed records with duration_min = 0.
-________________________________________
+_______________________________________________________________________________________________
 Business Problems Analyzed
 The following business problems were analyzed using SQL:
 1.	Track Popularity: Retrieved tracks with more than 1 billion streams.
@@ -90,8 +90,6 @@ The following business problems were analyzed using SQL:
 13.	Energy Range Analysis: Calculated the difference between highest and lowest energy values for each album using a WITH clause.
 14.	Energy-Liveness Ratio: Found tracks where the energy-to-liveness ratio exceeds 1.2.
 15.	Cumulative Likes: Calculated cumulative likes for tracks ordered by views using window functions.
-
-
 
 __________________________________________________________________________________________
 SQL Techniques Used
@@ -114,7 +112,7 @@ tracks, artists, albums, and user interactions like views, likes, and streams.
 It emphasizes data analysis techniques and problem-solving to uncover meaningful
 trends and patterns in music consumption.
 
-
+__________________________________________________________________________________________________
 Goals of the Project
 
 Data Exploration: Understand the dataset structure and clean inconsistencies.
@@ -122,11 +120,12 @@ Data Exploration: Understand the dataset structure and clean inconsistencies.
 Business Insights: Solve real-world problems related to music streaming, artist performance, and listener engagement.
 
 SQL Mastery: Showcase advanced SQL techniques, including aggregations, window functions, and CTEs.
-
+________________________________________________________________________________________________________________
 
 Key Features of the Project
 
 1. Dataset and Schema
+   
 The dataset includes detailed information on Spotify tracks, such as:
 
 Track Metadata: Artist, track name, album, album type (e.g., single, album).
@@ -137,7 +136,9 @@ Performance Metrics: Views, likes, comments, streams, and platform preference.
 
 The schema is defined in the spotify table, with 21 fields covering all aspects of the dataset.
 
+
 2. Data Cleaning and EDA
+   
 Exploratory Data Analysis (EDA) was performed to:
 
 Understand the dataset: Count total records, unique values, and distinct attributes like artists, tracks, and albums.
@@ -148,6 +149,7 @@ Analyze distributions: Evaluate audio feature ranges like energy and liveness.
 
 
 3. Business Problems Solved
+   
 The project addresses practical scenarios, such as:
 
 Track Popularity: Found tracks with more than 1 billion streams.
@@ -164,6 +166,7 @@ Energy-Liveness Relationship: Calculated energy-to-liveness ratio and highlighte
 
 
 4. Advanced SQL Techniques
+   
 This project uses a variety of SQL features:
 
 Aggregations: To calculate metrics like total views, likes, and comments.
@@ -174,7 +177,7 @@ Common Table Expressions (CTEs): Simplified complex queries like energy range an
 
 Subqueries: Compared liveness scores to dataset averages.
 
-
+_______________________________________________________________________________________________________________
 Key Insights
 
 Artist Dominance: The number of tracks per artist reveals productivity trends.
