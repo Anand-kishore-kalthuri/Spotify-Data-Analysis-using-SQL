@@ -14,12 +14,19 @@ Table of Contents
 5.	How to Run the Project
 ________________________________________
 Data Structure
+
 The dataset is stored in a SQL table named spotify. Below is the structure of the table:
+
 Column Name	Data Type	Description
+
 artist	VARCHAR(255)	Name of the artist.
+
 track	VARCHAR(255)	Name of the track.
+
 album	VARCHAR(255)	Name of the album.
+
 album_type	VARCHAR(50)	Type of album (e.g., single, album).
+
 danceability	FLOAT	Measure of how suitable a track is for dancing (0.0 to 1.0).
 energy	FLOAT	Measure of intensity and activity of a track (0.0 to 1.0).
 loudness	FLOAT	Loudness of the track in decibels (dB).
